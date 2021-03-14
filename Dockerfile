@@ -1,5 +1,7 @@
 FROM debian:10.8
 
+COPY TexSource ./
+
 RUN apt-get update -y && apt-get install -y \
 	texlive-fonts-recommended \
 	texlive-generic-recommended \
@@ -15,10 +17,4 @@ RUN apt-get update -y && apt-get install -y \
 	texlive-generic-extra \
 	texlive-bibtex-extra biber
 
-COPY TexSource .
-
-CMD ["pwd"]
-#CMD ["pdflatex", "mmayer.tex", "-interaction=nonstopmode"]
-#ENTRYPOINT ["ls build/"]
-#CMD ["bash"]
-#CMD ["pdflatex", "mmayer.tex", "interaction=nonstopmode"]
+CMD ["pdflatex", "mmayer.tex", "-interaction=nonstopmode"]
