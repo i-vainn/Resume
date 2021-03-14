@@ -17,7 +17,8 @@ RUN apt-get update -y && apt-get install -y \
 
 COPY TexSource .
 
-CMD ["pdflatex", "mmayer.tex", "-interaction=nonstopmode"]
+CMD ["pwd"]
+#CMD ["pdflatex", "mmayer.tex", "-interaction=nonstopmode"]
 #ENTRYPOINT ["ls build/"]
 #CMD ["bash"]
 #CMD ["pdflatex", "mmayer.tex", "interaction=nonstopmode"]
