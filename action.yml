@@ -1,0 +1,5 @@
+name: 'Build Tex'
+description: 'Compile .tex to my awesome CV'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
