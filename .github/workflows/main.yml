@@ -5,9 +5,7 @@ jobs:
 		runs-on: ubuntu-latest
 		name: A job to compile tex
 		steps:
-		- name: Checkout
-			uses: actions/checkout@v2
-		-	name: Builder action step
-			uses: ./
-			id: Builder
-		
+			- name: Checkout
+				uses: actions/checkout@v2
+			-	name: Builder action step
+				uses: ./		
