@@ -18,4 +18,4 @@ RUN apt-get update -y && apt-get install -y \
 	texlive-bibtex-extra biber
 
 #CMD ["pdflatex", "mmayer.tex", "-interaction=nonstopmode"]
-CMD ["ls -la"]
+CMD ["ls"]
