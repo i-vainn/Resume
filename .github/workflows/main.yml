@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
 	compile_cv:
-        	runs-on: ubuntu-latest
+			runs-on: ubuntu-latest
 			name: A job to compile tex
 			steps:
 				- name: Checkout
