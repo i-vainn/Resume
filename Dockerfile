@@ -15,7 +15,7 @@ RUN apt-get update -y && apt-get install -y \
 	texlive-generic-extra \
 	texlive-bibtex-extra biber
 
-COPY TexSources .
+COPY TexSource .
 
 CMD ["pdflatex", "mmayer.tex", "-interaction=nonstopmode"]
 #ENTRYPOINT ["ls build/"]
